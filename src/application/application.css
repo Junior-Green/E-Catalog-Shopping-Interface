@@ -1,0 +1,59 @@
+
+.textfield
+{
+	-fx-shape: "M 250 200 L 550 200 A 50 50 0 1 1 550 300 L 250 300 A 50 50 0 1 1 250 200 ";
+	-fx-padding: 0 20 0 18;
+	-fx-font-size: 18pt;
+}
+.passwordfield
+{
+	-fx-shape: "M 250 200 L 550 200 A 50 50 0 1 1 550 300 L 250 300 A 50 50 0 1 1 250 200 ";
+	-fx-padding: 0 20 0 18;
+	-fx-font-size: 35;
+}
+.promptLabel
+{
+	-fx-text-fill: lightgrey;
+	-fx-font-size: 28pt;
+}
+.slogan
+{
+	-fx-font-weight: bold;
+	-fx-font-size:24
+}
+.welcomeName
+{
+	-fx-font-weight: bold;
+}
+.createAcc
+{
+	-fx-font-weight: bold;
+	-fx-font-size:14;
+	-fx-underline: true;
+}
+.enter_button
+{
+	-fx-shape: "M 300 400 A 50 50 0 1 1 300 250 A 50 50 0 1 1 300 400";
+	-fx-background-color: orange;
+}
+.enter_button_hover
+{
+	-fx-shape: "M 300 400 A 50 50 0 1 1 300 250 A 50 50 0 1 1 300 400";
+	-fx-background-color: white;
+	-fx-border-color: orange;
+	-fx-border-width: 6pt;
+}
+.gridPaneBorder
+{
+	-fx-border-color: lightgrey;
+	-fx-border-width: 16pt;
+	-fx-border-style: solid;
+}
+.accountcreateLogo
+{
+	-fx-effect: dropshadow(three-pass-box, black, 10, 0, 5, 2);
+}
+.greetColor
+{
+	-fx-text-fill: white;
+}
