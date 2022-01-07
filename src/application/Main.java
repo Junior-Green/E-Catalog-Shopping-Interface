@@ -15,9 +15,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
-
-import com.sun.javafx.tk.FontLoader;
-import com.sun.javafx.tk.Toolkit;
 import javafx.animation.AnimationTimer;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -179,14 +176,13 @@ public class Main extends Application {
 						{		
 							if(!curentUser.equals(users.get(i)))
 							DashBoard.getItems().clear();
-							FontLoader fontLoader = Toolkit.getToolkit().getFontLoader();
 							signIn = true;				
 							curentUser = users.get(i);	
 							welcomeName.setText(curentUser.getFirstName() + ".");
 							double scene_width = scene.getWidth() / 2.0;
 							double scene_height = scene.getHeight() / 2.0;
 							double font_height = welcomeName.getPrefHeight() / 2;
-							double font_width = fontLoader.computeStringWidth(welcomeName.getText(), welcomeName.getFont()) / 2.0;
+							double font_width = 200;
 							root.getChildren().clear();
 							root.getChildren().addAll(balls[0].getNode(),balls[1].getNode(),balls[2].getNode(),balls[3].getNode(),welcomeName,welcomePhrase);
 							welcomePhrase.setLayoutX(scene_width - 112);
